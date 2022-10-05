@@ -2,8 +2,8 @@
 
 :root {
   --color-blue: #3656c9;
-  --color-green: #36c95f;
-  --color-pink: #c936a0;
+  --color-green: #2ed55d;
+  --color-pink: #a83a89;
   --color-white: #ebecf0;
   --background-color: var(--color-blue);
   --text-color: var(--color-white);
@@ -45,7 +45,9 @@ body {
   background: radial-gradient(farthest-corner at 85% 15%, var(--color-pink), transparent),
               radial-gradient(farthest-corner at 65% 65%, var(--color-green), transparent),
               radial-gradient(at center left, var(--color-blue), var(--color-blue));
+  background-attachment: fixed;
   background-color: var(--background-color);
+  background-size: cover;
   color: var(--text-color);
   display: flex;
   font-family: 'Nunito', sans-serif;
@@ -73,6 +75,11 @@ a {
 
 a:hover {
   text-decoration-color: rgba(235, 236, 240, 0.35);
+}
+
+h1,
+h2 {
+  line-height: 1;
 }
 
 h1 {
@@ -106,6 +113,6 @@ main {
   }
 }
 
-.info-cards > info-card {
-  flex: 1 1 auto;
+info-card > * {
+  margin: 0
 }
